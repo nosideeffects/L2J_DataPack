@@ -80,7 +80,7 @@ public class AdminInstance implements IAdminCommandHandler
 		}
 		else if (command.startsWith("admin_listinstances"))
 		{
-			for (Instance temp : InstanceManager.getInstance().getInstances().values())
+			for (Instance temp : InstanceManager.getInstance().getInstances())
 			{
 				activeChar.sendMessage("Id: " + temp.getId() + " Name: " + temp.getName());
 			}
